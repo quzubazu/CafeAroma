@@ -1,2 +1,1 @@
-# CafeAroma
-Website Rebuilding Contest
+# cafe_landing_page

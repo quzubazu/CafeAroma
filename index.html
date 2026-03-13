@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Aroma | Artisanal Experience</title>
+  <meta name="description"
+    content="Cafe Aroma — Experience the finest artisanal coffee and cuisine. est. 2005, Brewtown CA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  CINEMATIC INTRO OVERLAY                   -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div id="intro-overlay">
+    <canvas id="smoke-canvas"></canvas>
+    <div id="intro-logo-wrap">
+      <span id="intro-tagline">est. 2005</span>
+      <h1 id="intro-title">Cafe Aroma</h1>
+      <span id="intro-sub">Artisanal · Coffee · Experience</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--  MAIN SITE WRAPPER                         -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div id="site-wrapper" style="opacity:0; visibility:hidden;">
+
+    <!-- NAVIGATION -->
+    <header id="navbar">
+      <a href="#home" id="nav-logo">Cafe Aroma</a>
+      <nav id="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button id="order-nav-btn" onclick="orderNow()">Order Now</button>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-eyebrow">Welcome to</span>
+        <h1 class="hero-title">Cafe Aroma</h1>
+        <p class="hero-desc">We have the best coffee in the whole entire world. Come visit us today. We are open every
+          day except when we are closed.</p>
+        <button id="order-btn" onclick="orderNow()">Order Now</button>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- QUOTE STRIP -->
+    <div class="quote-strip">
+      <div class="quote-smoke-left"></div>
+      <div class="quote-smoke-right"></div>
+      <blockquote>
+        <span class="quote-mark">&ldquo;</span>
+        <p>Coffee is not just a beverage. It is a ritual, a pause, a conversation — the soul of every morning worth
+          remembering.</p>
+        <cite>— The Cafe Aroma Philosophy</cite>
+      </blockquote>
+    </div>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="section">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-label">Our Selection</span>
+          <h2>Our Menu</h2>
+          <p class="section-subtitle">Here are some things we sell:</p>
+        </div>
+
+        <div id="menu-grid">
+
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&auto=format&fit=crop"
+                alt="Coffee" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <h3>Coffee</h3>
+              <p>A cup of coffee. It is hot and black.</p>
+              <b>$2.50</b>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&auto=format&fit=crop"
+                alt="Cappuccino" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <h3>Cappuccino</h3>
+              <p>Cappuccino is coffee with milk foam on top.</p>
+              <b>$3.99</b>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1561882468-9110e03e0f78?w=600&auto=format&fit=crop"
+                alt="Latte" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <h3>Latte</h3>
+              <p>A smooth espresso-based drink with steamed milk.</p>
+              <b>$4.00</b>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop"
+                alt="Sandwich" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <h3>Sandwich</h3>
+              <p>Bread with stuff inside.</p>
+              <b>$5.50</b>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&auto=format&fit=crop"
+                alt="Cake" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <h3>Cake</h3>
+              <p>A slice of cake. Very sweet and delicious.</p>
+              <b>$3.25</b>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=600&auto=format&fit=crop"
+                alt="Espresso" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <h3>Espresso</h3>
+              <p>Small coffee. Strong and bold.</p>
+              <b>$2.00</b>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section section-dark">
+      <div class="section-inner about-inner">
+        <div class="about-img-col">
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&fit=crop"
+            alt="Inside Cafe Aroma" loading="lazy">
+        </div>
+        <div class="about-text-col">
+          <div class="section-header left">
+            <span class="section-label">Our Story</span>
+            <h2>About Us</h2>
+          </div>
+          <p>We are Cafe Aroma. We started in 2005. We love coffee and we hope you love coffee too. Our cafe is a nice
+            place to sit and drink coffee and eat food. We have wifi sometimes. Our staff is very friendly and they like
+            to serve customers every day of the week except on some holidays.</p>
+          <p>Our mission is to serve coffee.</p>
+          <p>Thank you for choosing Cafe Aroma.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <strong>2005</strong>
+              <span>Est. Year</span>
+            </div>
+            <div class="stat">
+              <strong>20+</strong>
+              <span>Menu Items</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>Arabica Beans</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="section">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-label">Moments</span>
+          <h2>Gallery</h2>
+          <p class="section-subtitle">Some pictures below:</p>
+        </div>
+        <div id="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&fit=crop"
+              alt="Coffee" loading="lazy">
+            <div class="gallery-overlay"><span>Coffee</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&auto=format&fit=crop"
+              alt="Cafe Inside" loading="lazy">
+            <div class="gallery-overlay"><span>Inside the Cafe</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&auto=format&fit=crop" alt="Food"
+              loading="lazy">
+            <div class="gallery-overlay"><span>Our Food</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=800&auto=format&fit=crop"
+              alt="Cafe Outside" loading="lazy">
+            <div class="gallery-overlay"><span>Outside View</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section section-dark">
+      <div class="section-inner contact-inner">
+        <div class="section-header left">
+          <span class="section-label">Get In Touch</span>
+          <h2>Contact Us</h2>
+          <p class="section-subtitle">Fill out the form below:</p>
+        </div>
+        <form id="contact-form" onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name-field">Name</label>
+              <input type="text" id="name-field" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email-field">Email</label>
+              <input type="email" id="email-field" placeholder="Your email address">
+            </div>
+          </div>
+          <div class="form-group full">
+            <label for="message-field">Message</label>
+            <textarea id="message-field" rows="5" placeholder="Write your message here"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">Cafe Aroma</span>
+          <p>The finest artisanal experience since 2005.</p>
+        </div>
+        <div class="footer-info">
+          <p>123 Coffee Street, Brewtown, CA 90210</p>
+          <p>Phone: 555-123-4567</p>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="social-link">Facebook</a>
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2024 Cafe Aroma. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  </div><!-- end #site-wrapper -->
+
+  <!-- FULL-VIEWPORT CURSOR SMOKE CANVAS (pointer-events: none) -->
+  <canvas id="cursor-smoke-canvas"></canvas>
+
+  <!-- FLOATING COFFEE CUP WIDGET -->
+  <div id="coffee-widget">
+    <div id="coffee-cup-svg">
+      <svg viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Saucer -->
+        <ellipse cx="40" cy="80" rx="36" ry="7" fill="#1a0c04" stroke="#c9a76a" stroke-width="1" />
+        <!-- Cup body -->
+        <path d="M14 36 L18 74 L62 74 L66 36 Z" fill="#1a0c04" stroke="#c9a76a" stroke-width="1.2" />
+        <!-- Handle -->
+        <path d="M66 44 Q84 44 84 57 Q84 70 66 70" stroke="#c9a76a" stroke-width="1.2" fill="none"
+          stroke-linecap="round" />
+        <!-- Coffee top (liquid) -->
+        <ellipse cx="40" cy="36" rx="26" ry="6" fill="#3d1a06" />
+        <!-- Light sheen on coffee -->
+        <ellipse cx="33" cy="34" rx="8" ry="2" fill="rgba(201,167,106,0.12)" />
+        <!-- Cup rim -->
+        <path d="M14 36 Q40 42 66 36" stroke="#c9a76a" stroke-width="1" fill="none" />
+        <!-- Steam lines (decorative) -->
+        <path d="M28 28 Q25 18 28 10" stroke="rgba(201,167,106,0.35)" stroke-width="1.5" stroke-linecap="round"
+          fill="none" />
+        <path d="M40 26 Q37 14 40 6" stroke="rgba(201,167,106,0.25)" stroke-width="1.5" stroke-linecap="round"
+          fill="none" />
+        <path d="M52 28 Q55 18 52 10" stroke="rgba(201,167,106,0.35)" stroke-width="1.5" stroke-linecap="round"
+          fill="none" />
+      </svg>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
